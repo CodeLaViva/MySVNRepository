@@ -1,0 +1,19 @@
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+tr {
+    line-height:35px;
+}
+
+.inputtd{
+    width: 140px;
+    float: left;
+}

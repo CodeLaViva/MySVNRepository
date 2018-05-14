@@ -1,0 +1,12 @@
+td{
+    width: 140px;
+    padding: 0 0 10px 10px;
+}
+
+tr{
+    height: 50px;
+}
+
+.tdName{
+    text-align: center;
+}

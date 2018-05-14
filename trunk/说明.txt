@@ -1,0 +1,6 @@
+day文件夹是我的日常工作记录，以及一些疑问还有task思考题的回答（taskQA.md文件，汇总自day4.27和day4.30）
+
+plan.md文件是我的学习计划
+
+IdeaProjects/Practice是我的练习程序的工作空间，每一个Practice+数字都是一个模块，实现了当前学习过的章节的课后习题，能够在一个类做完的习题都使用的一个Exercise类，里面区分了每一道题目，每一题都是一个function，通过main调用来实现，不能一个类实现的是使用的Exercise+数字的形式进行区分
+后面几章高级技术学习时，有很多例子用来理解当前章节的内容，会有部分example、test的类，主要实现课后习题类还是Exercise类
