@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Unit1" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/Unit10" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/Unit11" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/Unit12" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/Unit14" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/Unit15" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/Unit16" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/Unit17" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/Unit18" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/Unit19" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/Unit20" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/Unit3" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/Unit4" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/Unit5" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/Unit6" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/Unit7" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/Unit8" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/Unit9" vcs="svn" />
+  </component>
+</project>
