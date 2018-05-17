@@ -41,7 +41,7 @@
         function check_num(){
             var num =document.getElementById("num").value;
             if (num === "") {
-                document.getElementById("CheckNum").innerHTML = "«Î ‰»Î√‹¬Î";
+                document.getElementById("CheckNum").innerHTML = "«Î ‰»Î”√ªß±‡∫≈";
                 flag = false;
             } else {
                 document.getElementById("CheckNum").innerHTML = "";
@@ -50,7 +50,7 @@
         }
 
         function check_passBlank() {
-            var password1 = document.getElementById("vote_password1").value;
+            var password1 = document.getElementById("vote_password").value;
             if (password1 === "") {
                 document.getElementById("CheckPass1").innerHTML = "«Î ‰»Î√‹¬Î";
                 flag = false;
@@ -61,7 +61,7 @@
         }
 
         function check_username() {
-            var password1 = document.getElementById("vote_password1").value;
+            var password1 = document.getElementById("vote_password").value;
             var password2 = document.getElementById("vote_password2").value;
 
             if (password1 === password2) {
@@ -100,7 +100,7 @@
                 <tr>
                     <td style="text-align: right;">”√ªß±‡∫≈£∫</td>
                     <td>
-                        <input type="password" ID="num" name="num"
+                        <input ID="id" name="id"
                                class="form-control has-error inputtd"
                                onblur="check_num()"/>
                         <span style="color:red; margin-left:10px; text-align:center;" id="CheckNum"></span>
@@ -119,7 +119,7 @@
                 <tr>
                     <td style="text-align: right;">√‹¬Î£∫</td>
                     <td>
-                        <input type="password" ID="vote_password1" name="vote_password1"
+                        <input type="password" ID="vote_password" name="vote_password"
                                class="form-control has-error inputtd"
                                onblur="check_passBlank()"/>
                         <span style="color:red; margin-left:10px; text-align:center;" id="CheckPass1"></span>

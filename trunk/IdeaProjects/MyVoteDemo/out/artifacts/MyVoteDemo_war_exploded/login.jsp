@@ -13,10 +13,6 @@
             + path + "/";
 
     String flag = request.getParameter("flag");
-    String sign = request.getParameter("CheckLogin");
-//    if (errorMsg == null) {
-//        errorMsg = "";
-//    }
     String errorMessage = "";
     if (flag != null) {
         session.removeAttribute("user");
@@ -35,10 +31,6 @@
     <meta http-equiv="expires" content="0">
     <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
     <meta http-equiv="description" content="This is my page">
-
-    <!-- <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>登录</title>
 
     <link href="<%=basePath%>style/login.css" rel="stylesheet"

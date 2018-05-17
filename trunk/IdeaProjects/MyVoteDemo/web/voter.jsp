@@ -43,12 +43,12 @@
         </div>
         <div style="text-align: center">
             <h3 style="color: white;">当前登录的用户为:${sessionScope.user}</h3>
-            <a class="btn btn-default" id="cancel" href="<%=basePath%>index.jsp?flag=unlogin">注销</a>
+            <a class="btn btn-default" id="cancel" href="<%=basePath%>login.jsp?flag=unlogin">注销</a>
         </div>
         <div style="text-align: center;">
             <table id="result" class="table table-hover table-bordered" style="color: white;margin: auto">
                 <tr>
-                    <td><!--input type="checkbox" title="全选"/--></td>
+                    <td></td>
                     <td>投票人Id</td>
                     <td>投票人</td>
                     <td>投票时间</td>

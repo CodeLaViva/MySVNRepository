@@ -7,7 +7,7 @@
 ## 开发环境
 
 * 开发系统： Window10
-* 开发语言： Java 1.8
+* 开发语言： Jdk 1.8
 * 开发工具： IntelliJ IDEA 2018
 * 程序类型： JavaWeb程序
 * 数据库： PostgreSQL
@@ -16,9 +16,9 @@
 ## 项目结构
 
 * Model(Entity)： User 候选人类(一开始使用的是User， 后来准备重构成 Person 时出现 bug，无法解决，于是回滚使用User)， Voter 选举人类
-* Controller(控制器，包含各种 form 响应 function): LoginController 用于登录时的后台 , VoteController 用于投票操作的后台
-* Dao(用于service调用): UserDao(interface), UserDaoImpl 接口的实现类，对候选人的相关操作, VoteDao(interface), VoteDaoImpl 接口的实现类，对选举人的相关操作, LoginDao(interface), LoginDaoImpl 接口的实现类，对登录的相关操作
-* Service(用于controller调用): UserService(interface), UserServiceImpl 接口的实现类， LoginService(interface), LoginServiceImpl 接口的实现类
+* Controller(控制器，包含各种 form 的 action响应): LoginController 用于登录时的后台 , VoteController 用于投票操作的后台
+* Dao(用于service调用，主要进行数据库操作): UserDao(interface), UserDaoImpl 接口的实现类，对候选人的相关操作, VoteDao(interface), VoteDaoImpl 接口的实现类，对选举人的相关操作, LoginDao(interface), LoginDaoImpl 接口的实现类，对登录的相关操作
+* Service(用于controller调用， 调用 dao实现相关操作): UserService(interface), UserServiceImpl 接口的实现类， LoginService(interface), LoginServiceImpl 接口的实现类
 * Util: Hibernate_Util 数据库操作工具类， 用于进行对数据库各种操作。
 
 ## 页面结构
@@ -27,8 +27,8 @@
 * success.jsp 登陆成功页面，选举人在这个页面选择下一步操作（例如开始投票）
 * vote.jsp 投票页面，选举人在这个页面进行投票操作
 * result.jsp 投票结果也，选举人在这个页面查看投票结果
-* register.jsp 注册页面，暂时只写了页面，没有注入功能
 * voter.jsp 选举人信息页，显示选举人的信息
+* register.jsp 注册页面，选举人能够在此进行注册操作（数据库验证暂未实现）
 
 ## 系统数据库设计
 

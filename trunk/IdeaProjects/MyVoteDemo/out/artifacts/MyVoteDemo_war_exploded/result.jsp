@@ -15,19 +15,7 @@
     String basePath = request.getScheme() + "://"
             + request.getServerName() + ":" + request.getServerPort()
             + path + "/";
-    /*String ID = (String) session.getAttribute("ID");
-    String Admin_code = (String) session.getAttribute("Admin");
-    System.out.println("-----------ID---------------");
-    System.out.println(ID);
-    System.out.println("-----------Admin_code---------------");
-    System.out.println(Admin_code);
-    if (ID == null) {
-        response.sendRedirect(basePath + "login.jsp");
-    }*/
-
-    User user = new User();
     System.out.println(session.getAttribute("user"));
-    //StudentService ss = new StudentService();
     List<User> list = Hibernate_Util.query();
     pageContext.setAttribute("list", list);
 

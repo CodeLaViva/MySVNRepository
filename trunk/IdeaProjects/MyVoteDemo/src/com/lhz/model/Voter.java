@@ -33,6 +33,12 @@ public class Voter {
         this.vote_password = vote_password;
     }
 
+    public Voter(int id, String vote_username, String vote_password) {
+        this.id = id;
+        this.vote_username = vote_username;
+        this.vote_password = vote_password;
+    }
+
     public Voter() {
     }
 

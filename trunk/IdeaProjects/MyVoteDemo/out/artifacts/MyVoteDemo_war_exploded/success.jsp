@@ -51,27 +51,25 @@
     <div style="margin-top: 200px; color: white">
         <div style="margin: auto;border: solid 2px #2891F8; color: #ffffff; ">
             <div class="masthead clearfix">
-                <div class="inner">
-                    <h1 class="cover-heading" style="text-align: center;">欢迎${user}来投票</h1>
+                <div class="inner" style="text-align: center;">
+                    <h1 class="cover-heading"  >欢迎${user}来投票</h1>
+                    <span style="color: red;">${msg }</span>
                 </div>
             </div>
-            <span style="color: red;">${msg }</span>
-
             <div class="inner cover">
                 <p class="lead"></p>
                 <p class="lead" style="text-align: center;">
                     <a href="<%=basePath%>vote.jsp" class="btn btn-lg btn-default" >点击投票</a>
+                    <a href="<%=basePath%>voter.jsp" class="btn btn-lg btn-default" >选举人信息</a>
                     <a href="<%=basePath%>login.jsp" class="btn btn-lg btn-default">返回</a>
                 </p>
-            </div>
-            <div class="mastfoot">
-                <div class="inner">
-                    <p style="text-align: center; margin-top: 0; color: white">lhz的投票系统 </p>
-                </div>
             </div>
         </div>
     </div>
 </div>
-
+<!-- 页脚 -->
+<footer class="blog-footer" style="text-align: center; color:white">
+    <p>lhz的投票系统 </p>
+</footer>
 </body>
 </html>

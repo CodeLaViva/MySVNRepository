@@ -16,9 +16,7 @@
             + request.getServerName() + ":" + request.getServerPort()
             + path + "/";
 
-    Voter voter = new Voter();
     System.out.println(session.getAttribute("user"));
-    //StudentService ss = new StudentService();
     List<Voter> list = Hibernate_Util.queryVoter();
     pageContext.setAttribute("list", list);
 %>
@@ -31,8 +29,6 @@
           type="text/css"/>
     <link href="<%=basePath%>style/bootstrapDemo.css" rel="stylesheet"
           type="text/css"/>
-
-
     <style type="text/css">
         body {
             background-image: url("<%=basePath%>image/bkg2.jpg");
@@ -47,13 +43,12 @@
         </div>
         <div style="text-align: center">
             <h3 style="color: white;">当前登录的用户为:${sessionScope.user}</h3>
-            <!--span id="admin_tip" style="color: white;">123</span-->
-            <a class="btn btn-default" id="cancel" href="<%=basePath%>index.jsp?flag=unlogin">注销</a>
+            <a class="btn btn-default" id="cancel" href="<%=basePath%>login.jsp?flag=unlogin">注销</a>
         </div>
         <div style="text-align: center;">
             <table id="result" class="table table-hover table-bordered" style="color: white;margin: auto">
                 <tr>
-                    <td><!--input type="checkbox" title="全选"/--></td>
+                    <td></td>
                     <td>投票人Id</td>
                     <td>投票人</td>
                     <td>投票时间</td>
@@ -64,7 +59,6 @@
                         <td id="name${status.index}">${voter.id}</td>
                         <td>${voter.vote_username}</td>
                         <td>${voter.vote_Date}</td>
-                        <!--td><a class="btn btn-default" href="<%=basePath%>DeleteServlet?id=${user.id}">删除</a></td-->
                     </tr>
                 </c:forEach>
             </table>
