@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main</title>
+    <link type="text/css" rel="stylesheet" href="style/bootstrap.min.css" />
+    <link href="https://cdn.bootcss.com/angularjs-slider/6.5.1/rzslider.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style/MyMainCss.css" />
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <script src="https://cdn.bootcss.com/angularjs-slider/6.5.1/rzslider.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular-animate.min.js"></script>
+    <script src="javascript/jquery-3.2.1.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/MyMainJS.js"></script>
+
+    <script>
+    </script>
+</head>
+
+<body>
+    <div class="navContainer">
+        <div class="header">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar">1</span>
+                              <span class="icon-bar">2</span>
+                              <span class="icon-bar">3</span>
+                            </button>
+                        <a class="navbar-brand" href="#">李鸿正</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-left" style="margin-left: 130px ">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="搜索">
+                            </div>
+                            <button type="submit" class="btn btn-default">搜索</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <span class="glyphicon glyphicon-user  dropdown-toggle center" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="width: 50px; height: 50px"></span>
+                                <!--a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span></a-->
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">登录</a></li>
+                                    <li><a href="#">注册</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">关于</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>
+    <div class="body">
+        <div class="row first">
+            <!--多级下拉-->
+            <div class="col-md-3">
+                <div class="left">
+                    <div class="menu">
+                        <div class="row menu" ng-mouseleave="show1=false">
+                            <div class="col-md-10 center" ng-mouseenter="show1=true">
+                                <span>我是侧向菜单1</span>
+                            </div>
+                            <div class="col-md-2 center">
+                                <img src="image/more.png" class="icon" />
+                            </div>
+                        </div>
+                        <div class="row menu" ng-mouseleave="show2=false">
+                            <div class="col-md-10 menu center" ng-mouseenter="show2=true">
+                                <span>我是侧向菜单2</span>
+                            </div>
+                            <div class="col-md-2 center">
+                                <img src="image/more.png" class="icon" />
+                            </div>
+                        </div>
+                        <div class="row menu" ng-mouseleave="show3=false">
+                            <div class="col-md-10 center" ng-mouseenter="show3=true">
+                                <span>我是侧向菜单3</span>
+                            </div>
+                            <div class="col-md-2 center">
+                                <img src="image/more.png" class="icon" />
+                            </div>
+                        </div>
+                        <div class="row menu" ng-mouseleave="show4=false">
+                            <div class="col-md-10 center" ng-mouseenter="show4=true">
+                                <span>我是侧向菜单4</span>
+                            </div>
+                            <div class="col-md-2 center">
+                                <img src="image/more.png" class="icon" />
+                            </div>
+                        </div>
+                        <div class="row menu" ng-mouseleave="show5=false">
+                            <div class="col-md-10 center" ng-mouseenter="show5=true">
+                                <span>我是侧向菜单5</span>
+                            </div>
+                            <div class="col-md-2 center">
+                                <img src="image/more.png" class="icon" />
+                            </div>
+                        </div>
+                        <div class="row menu" ng-mouseleave="show6=false">
+                            <div class="col-md-10 center" ng-mouseenter="show6=true">
+                                <span>我是侧向菜单6</span>
+                            </div>
+                            <div class="col-md-2 center">
+                                <img src="image/more.png" class="icon" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--走马灯-->
+            <div class="col-md-9 no_padding">
+                <div class="right" style="position: relative;">
+                    <div ng-show="show1" class="menu">
+                        <div style="width:inherit; height: 50px;">
+                            <span class="center"> 这是侧向菜单1的子菜单</span>
+                        </div>
+
+                    </div>
+                    <div ng-show="show2" class="menu"></div>
+                    <div ng-show="show3" class="menu"></div>
+                    <div ng-show="show4" class="menu"></div>
+                    <div ng-show="show5" class="menu"></div>
+                    <div ng-show="show6" class="menu"></div>
+                    <div id="demo" ng-controller="sliderCtrl" style="position:absolute; z-index: 3;">
+                        <div style="position: absolute; top: 200px; left:20px; height: 20px; width: 20px;z-index: 4;">
+                            <img src="image/less.png" style="width: 20px; height: 20px" onclick="last();" /></div>
+                        <div style="position: absolute; top: 200px; right:20px; height: 20px; width: 20px;z-index: 4;">
+                            <img src="image/more.png" style="width: 20px; height: 20px" onclick="next();" /></div>
+                        <ul id="demoimg">
+                            <li ng-repeat="image in images">
+                                <img class="pic" ng-src="{{image.src}}">
+                            </li>
+                        </ul>
+                        <ul id="blue" style="left: 300px">
+                            <li style="background:blue"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+
+        </div>
+        <div class="third">
+
+        </div>
+        <!--div class="container">
+        <div ng-controller="sliderCtrl">
+            <slider images="images" auto="true">
+
+            </slider>
+            <div class="slider" ng-show="images.length>0">
+                <div class="slide" ng-show="$index == current">
+                    <div ng-repeat="image in images">
+                        <img width="800" ng-src="{{image.src}}" />
+                    </div>
+                </div>
+                <div class="slider-thumb">
+                    <a href="javascript:;" ng-repeat="image in images" ng-class="{curr:$index == current}">
+                        <span aria-hidden="true" class="glyphicon glyphicon-heart"></span>
+                    </a>
+                </div>
+                <div class="arrows">
+                    <a href="#" ng-click="prev()">
+                        <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a href="#" ng-click="next()">
+                        <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div-->
+
+
+</body>
+
+</html>

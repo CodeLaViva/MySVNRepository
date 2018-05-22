@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculate</title>
+    <link type="text/css" rel="stylesheet" href="style/MyCalculateCss.css" />
+    <link type="text/css" rel="stylesheet" href="style/bootstrap.min.css" />
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <script src="javascript/jquery-3.2.1.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/MyCalculateJS.js"></script>
+</head>
+
+<body>
+    <table align="center" class="table" style="width: 0px">
+        <tr>
+            <td class="td_back" colspan="4" id="content"></td>
+        </tr>
+        <tr>
+            <td class="td_back" colspan="4" id="result"></td>
+        </tr>
+        <tr>
+            <td onclick="appContent(this)">(</td>
+            <td onclick="appContent(this)">)</td>
+            <td onclick="appContent(this)" class="td_orange">c</td>
+            <td onclick="appContent(this)">*</td>
+        </tr>
+        <tr>
+            <td onclick="appContent(this)">1</td>
+            <td onclick="appContent(this)">2</td>
+            <td onclick="appContent(this)">3</td>
+            <td onclick="appContent(this)">/</td>
+        </tr>
+        <tr>
+            <td onclick="appContent(this)">4</td>
+            <td onclick="appContent(this)">5</td>
+            <td onclick="appContent(this)">6</td>
+            <td onclick="appContent(this)">+</td>
+
+        </tr>
+        <tr>
+            <td onclick="appContent(this)">7</td>
+            <td onclick="appContent(this)">8</td>
+            <td onclick="appContent(this)">9</td>
+            <td onclick="appContent(this)">-</td>
+        </tr>
+        <tr>
+            <td onclick="appContent(this)">del</td>
+            <td onclick="appContent(this)">0</td>
+            <td onclick="appContent(this)">.</td>
+            <td onclick="appContent(this)" class="td_orange">=</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

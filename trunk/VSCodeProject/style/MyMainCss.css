@@ -1,0 +1,181 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.body {
+    width: 1024px;
+    height: 1366px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.no_padding {
+    padding: 0
+}
+
+.no_margin {
+    margin: 0
+}
+
+.navContainer {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    top: 0;
+    z-index: 99;
+}
+
+.header {
+    width: auto;
+    height: 50px;
+}
+
+.first {
+    padding: 0;
+    margin: 0;
+    width: 1024px;
+    height: 400px;
+    background-color: white;
+    /*background-color: aqua;*/
+}
+
+.first .left {
+    padding: 0;
+    margin: 0;
+    height: 400px;
+    background-color: white;
+    /*background-color: chartreuse;*/
+}
+
+.first .right {
+    height: 400px;
+    background-color: blue;
+}
+
+.menu {
+    height: 360px;
+    padding-top: 20px;
+}
+
+.menu .menu {
+    height: 60px;
+    color: white;
+    background-color: rgb(43, 51, 59);
+    padding: 0;
+    margin: 0;
+}
+
+.menu .menu:hover {
+    background-color: rgb(106, 112, 117);
+}
+
+.menu .menu .icon {
+    width: 16px;
+    height: 16px;
+}
+
+.menu .menu div {
+    height: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.first .right .menu {
+    height: inherit;
+    width: 500px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+
+.menu6 {
+    height: inherit;
+    width: 500px;
+    background-color: rgb(219, 29, 29);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+
+.second {
+    width: 1024px;
+    height: 200px;
+    background-color: blanchedalmond;
+}
+
+.third {
+    width: 1024px;
+    height: 800px;
+    background-color: aquamarine;
+}
+
+.center {
+    display: -moz-box;
+    /*兼容Firefox*/
+    display: -webkit-box;
+    /*兼容FSafari、Chrome*/
+    -moz-box-align: center;
+    /*兼容Firefox*/
+    -webkit-box-align: center;
+    /*兼容FSafari、Chrome */
+    -moz-box-pack: center;
+    /*兼容Firefox*/
+    -webkit-box-pack: center;
+    /*兼容FSafari、Chrome */
+}
+
+
+/*定义大盒子*/
+
+#demo {
+    overflow: hidden;
+    width: 768px;
+    height: 400px;
+    position: relative;
+}
+
+
+/*图片盒子*/
+
+#demoimg {
+    width: (768 * 4) px;
+    height: 400px;
+    position: absolute;
+}
+
+#demoimg li {
+    float: left;
+    list-style: none;
+    width: 768px;
+    height: 400px;
+}
+
+.pic {
+    width: 800px;
+    height: 400px;
+}
+
+
+/*blue 部分是附加效果，图片下边对应的蓝色小块*/
+
+#blue {
+    bottom: 0;
+    position: absolute;
+}
+
+#blue li {
+    list-style: none;
+    width: 30px;
+    height: 5px;
+    background: #ccc;
+    float: left;
+    margin: 0 3px;
+}
